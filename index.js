@@ -1,5 +1,6 @@
 // require packages
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 // array of questions for user
 const questions = [
@@ -46,7 +47,7 @@ const questions = [
             // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
             "The Perl License",
             // [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
-            "Apache 2.0 License",
+            "Apache 2.0 License"
             // [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
         ]
     },

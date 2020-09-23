@@ -1,6 +1,7 @@
-// require packages
+// require packages/files
 const inquirer = require('inquirer');
 const fs = require('fs');
+const utils = require('./utils/generateMarkdown');
 
 // array of questions for user
 inquirer
@@ -40,7 +41,7 @@ inquirer
             name: "license",
             message: "Please choose a license.",
             choices: [
-                "GNU GPL v3", 
+                "GNU GPL v3",
                 // [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
                 "IBM Public License Version 1.0",
                 // [![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
@@ -63,19 +64,18 @@ inquirer
             message: "Enter your email address."
         },
     ])
-    .then((response) => {
-        console.log('Success!' + JSON.stringify(response));
+    .then(responseObj = (response) => {
+        console.log('written!');
+        writeToFile(response);
+        utils(response);
+        // return JSON.stringify(response);
     });
 
-// destructured answers
 
 // function to write README file
-// fs.writeFile('README.md', data, (err) => {
-//     if (err) {
-//         console.log(err);
-//     }
-//     console.log('written!')
-// });
+function writeToFile(response) {
+    console.log(response.title);
+}
 
 // function to initialize program
 function init() {

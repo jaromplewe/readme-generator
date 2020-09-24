@@ -28,7 +28,7 @@
   
   ### Github Link
   
-  My Github profile: __[github.com/jaromplewe](github.com/jaromplewe)__
+  My Github profile: __[github.com/jaromplewe](https://github.com/jaromplewe)__
   
   ### Email
   

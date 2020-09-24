@@ -56,7 +56,7 @@ function generateMarkdown(response) {
   
   ### Github Link
   
-  My Github profile: __[github.com/${response.github}](github.com/${response.github})__
+  My Github profile: __[github.com/${response.github}](https://github.com/${response.github})__
   
   ### Email
   

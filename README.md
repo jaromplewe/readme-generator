@@ -1,35 +1,35 @@
-# jarom's project
+# j
 
-  __[github.jaromsproject](github.jaromsproject)__
+  __[j](j)__
     
   ## Description
   
-  cool project
+  j
   
   ### Installation Instructions
   
-  press start
+  j
   
   ### Usage Information
   
-  careful not to get too involved
+  j
   
   ### Contribution Guidelines
   
-  anyone is welcome to contribute
+  j
   
   ### Test Instructions
   
-  press test
+  j
   
   ### License
   
-  The MIT License
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
   
   ### Github Link
   
-  jaromplewe
+  j
   
   ### Email
   
-  jplewe23@gmail.com
+  j

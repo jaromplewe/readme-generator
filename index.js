@@ -70,11 +70,11 @@ inquirer
         },
     ])
     .then((response) => {
-        console.log('written!');
         const mdString = generateMarkdown(response);
         writeToFile(mdString);
         // return JSON.stringify(response);
     });
+
 
 
 // function to write README file
@@ -84,6 +84,7 @@ function writeToFile(mdString) {
             console.log(err);
         }
     })
+    console.log('Successfully written!');
 }
 
 // function to initialize program

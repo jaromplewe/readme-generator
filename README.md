@@ -24,11 +24,11 @@
   
   ### License
   
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) - This project is protected under the GNU GPL v3. 
   
   ### Github Link
   
-  j
+  My Github profile: __[github.com/jaromplewe](github.com/jaromplewe)__
   
   ### Email
   

@@ -52,11 +52,11 @@ function generateMarkdown(response) {
   
   ### License
   
-  ${licenseBdg}
+  ${licenseBdg} - This project is protected under the ${response.license}. 
   
   ### Github Link
   
-  ${response.github}
+  My Github profile: __[github.com/${response.github}](github.com/${response.github})__
   
   ### Email
   

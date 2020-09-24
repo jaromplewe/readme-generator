@@ -26,6 +26,7 @@ function generateMarkdown(response) {
   }
   licenseBadge(response);
 
+  // return the string that will go into the README file
   return `# ${response.title}
 
   __[${response.urlLink}](${response.urlLink})__

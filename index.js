@@ -1,7 +1,7 @@
 // require packages/files
 const inquirer = require('inquirer');
 const fs = require('fs');
-const utils = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // array of questions for user
 inquirer
@@ -10,6 +10,11 @@ inquirer
             type: "input",
             name: "title",
             message: "What is the title for your project?"
+        },
+        {
+            type: "input",
+            name: "link",
+            message: "What is the URL link to your project?"
         },
         {
             type: "input",
@@ -64,17 +69,21 @@ inquirer
             message: "Enter your email address."
         },
     ])
-    .then(responseObj = (response) => {
+    .then((response) => {
         console.log('written!');
-        writeToFile(response);
-        utils(response);
+        const mdString = generateMarkdown(response);
+        writeToFile(mdString);
         // return JSON.stringify(response);
     });
 
 
 // function to write README file
-function writeToFile(response) {
-    console.log(response.title);
+function writeToFile(mdString) {
+    fs.writeFile('README.md', mdString, (err) => {
+        if (err) {
+            console.log(err);
+        }
+    })
 }
 
 // function to initialize program

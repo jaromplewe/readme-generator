@@ -1,9 +1,13 @@
+// // require packages/files
+const fs = require('fs');
+
 // function to generate markdown for README
 function generateMarkdown(response) {
-  console.log(response.title)
   return `# ${response.title}
   
-`;
+  ## ${response.description}
+
+  `;
 }
 
 module.exports = generateMarkdown;

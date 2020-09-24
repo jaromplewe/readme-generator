@@ -13,7 +13,7 @@ inquirer
         },
         {
             type: "input",
-            name: "link",
+            name: "urlLink",
             message: "What is the URL link to your project?"
         },
         {
